@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org" th:fragment="layout(content)">
+    <head th:replace="~{common/head::head}" >
+    <body>
+        <div th:replace="~{common/header-nav::nav-bar}"></div>
+        <div class="container">
+            <div class="card my-2">
+                <p class="my-2 mx-2">
+
+                </p>
+                <div class="card mx-2 my-2">
+                    <table class="table table-hover">
+                        <thead class="table table-primary">
+                            <tr>
+                                <th>DESCRIPTION</th>
+                                <th>METHOD</th>
+                                <th>MAPPING</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <th scope="row">LIST OF RECIPE</th>
+                                <td class="text-bg-success">GET</td>
+                                <td><a href="http://localhost:8080/api/recipe/list">https://foodfamapi.up.railway.app/api/recipe/list</a></td>
+                            </tr>
+                            <tr>
+                                <th scope="row">SEARCH RECIPE BY NAME</th>
+                                <td class="text-bg-success">GET</td>
+                                <td><a href="http://localhost:8080/api/recipe/search?keyword=Tofu">https://foodfamapi.up.railway.app/api/recipe/search?keyword=Tofu</a></td>
+                            </tr>
+                            <tr>
+                                <th scope="row">SEARCH RECIPE BY ID</th>
+                                <td class="text-bg-success">GET</td>
+                                <td><a href="http://localhost:8080/api/recipe/findById/1">https://foodfamapi.up.railway.app/api/recipe/findById/1</a></td>
+                            </tr>
+                            <tr>
+                                <th scope="row">SEARCH RECIPE BY INGREDIENTS</th>
+                                <td class="text-bg-success">GET</td>
+                                <td><a href="http://localhost:8080/api/recipe/findByIngredients?ingredients=Tomato,+Potato">https://foodfamapi.up.railway.app/api/recipe/findByIngredients?ingredients=Tomato,+Potato</a></td>
+                            </tr>
+                            <tr>
+                                <th scope="row">LIST OF CATEGORY</th>
+                                <td class="text-bg-success">GET</td>
+                                <td><a href="http://localhost:8080/api/category/list">https://foodfamapi.up.railway.app/api/category/list</a></td>
+                            </tr>                             
+                        </tbody>
+                    </table>
+<!--                    <div class="row ">
+                        <input class="form-control " type="search" placeholder="Search" aria-label="Search">
+                        <span th:each="recipe:${recipes}">
+                            <h4><span th:text="${recipe.title}"/></h4>
+                            <span><img th:src="${recipe.image}" style="height: 200px;width: 200px;"/>
+                                <span th:each="nutrition: ${recipe.nutrition}"> 
+                                    <span th:text="${nutrition.calories}" />
+                                </span>
+                            </span>-
+                    </div>-->
+
+                </div>
+            </div>
+        </div>
+        <br><!-- comment -->
+        <br>
+        <!--        <img th:src="@{/images/Baked-Egg-Rolls.jpg}" style="height: 200px;width: 200px;"/>-->
+    </body>
+</html>

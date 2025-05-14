@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org" th:fragment="layout(content)">
+    <head th:replace="~{common/head::head}" >
+    <body>
+        <div th:replace="~{common/header-nav::nav-bar}"></div>
+        <div class="container">
+            <span th:each="recipe:${recipes}">  
+                <div class="row">
+                        <div class="col my-2 col-md-12">
+                            <div class="row g-0 border rounded  position-relative">
+                                <div class="col-md-2 col-sm-6 col-xs-12">
+                                    <img class="my-2 mx-2" th:src="${recipe.image}" style="height: 200px;width: 200px;"/>
+                                </div>
+                                <div class="col p-6 col-md-8 col-sm-6 col-xs-12">
+                                    <a class="h4 text-primary" target="_blank" th:href="@{/recipeDetails/+${recipe.title}}"><span th:text="${recipe.title}" /></a>
+                                    <p><h6>Description</h6><span th:text="${recipe.description}" /></p>
+                                    <p><h6>Information</h6><span th:text="${recipe.information}" /></p>
+                                    <span th:each="nutrition: ${recipe.nutrition}"> 
+                                        <h6><a>Calories:</a><span th:text="${nutrition.calories}" /><a>  per&nbsp <span th:text="${nutrition.amountPerServing}" /> </a></h6>
+                                    </span>
+                                </div>
+                        </div>
+                    </div>
+                </div>
+            </span>
+        </div>
+    </div>
+    <br>
+    <br>
+    <!--        <img th:src="@{/images/Baked-Egg-Rolls.jpg}" style="height: 200px;width: 200px;"/>-->
+</body>
+</html>
