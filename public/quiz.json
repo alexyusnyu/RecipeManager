@@ -1,0 +1,112 @@
+[
+    {
+        "id": "01",
+        "question": "Which planet is known as the Red Planet?",
+        "options": [
+            "Venus",
+            "Mars",
+            "Jupiter",
+            "Saturn"
+        ],
+        "answer": "Mars"
+    },
+    {
+        "id": "02",
+        "question": "Which country is known as the Land of the Rising Sun?",
+        "options": [
+            "China",
+            "South Korea",
+            "Japan",
+            "Thailand"
+        ],
+        "answer": "Japan"
+    },
+    {
+        "id": "03",
+        "question": "Who developed the theory of general relativity?",
+        "options": [
+            "Isaac Newton",
+            "Albert Einstein",
+            "Galileo Galilei",
+            "Nikola Tesla"
+        ],
+        "answer": "Albert Einstein"
+    },
+    {
+        "id": "04",
+        "question": "What is the largest mammal in the world?",
+        "options": [
+            "Elephant",
+            "Blue Whale",
+            "Giraffe",
+            "Shark"
+        ],
+        "answer": "Blue Whale"
+    },
+    {
+        "id": "05",
+        "question": "In what year did the Titanic sink?",
+        "options": [
+            "1905",
+            "1912",
+            "1899",
+            "1920"
+        ],
+        "answer": "1912"
+    },
+    {
+        "id": "06",
+        "question": "Who is known as the father of modern physics?",
+        "options": [
+            "Max Planck",
+            "Albert Einstein",
+            "Marie Curie",
+            "Niels Bohr"
+        ],
+        "answer": "Albert Einstein"
+    },
+    {
+        "id": "07",
+        "question": "Which organ in the human body is responsible for pumping blood?",
+        "options": [
+            "Lungs",
+            "Heart",
+            "Liver",
+            "Brain"
+        ],
+        "answer": "Heart"
+    },
+    {
+        "id": "08",
+        "question": "What is the capital of Canada?",
+        "options": [
+            "Toronto",
+            "Ottawa",
+            "Vancouver",
+            "Montreal"
+        ],
+        "answer": "Ottawa"
+    },
+    {
+        "id": "09",
+        "question": "Which ocean is the largest in the world?",
+        "options": [
+            "Atlantic Ocean",
+            "Indian Ocean",
+            "Arctic Ocean",
+            "Pacific Ocean"
+        ],
+        "answer": "Pacific Ocean"
+    },
+    {
+        "id": "10",
+        "question": "What is the chemical symbol for water?",
+        "options": [
+            "CO2",
+            "H2O",
+            "O2",
+            "H2"
+        ],
+        "answer": "H2O"
+    }
+]
